@@ -3,6 +3,8 @@ from discord.ext import commands
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from datetime import datetime
 import pytz
+import os
+from dotenv import load_dotenv
 
 intents = discord.Intents.default()
 intents.guilds = True
@@ -39,5 +41,6 @@ async def send_reminder():
         await channel.send(f"<@&{ROLE_ID}> 결계 시작 10분 전 입니다.")
     else:
         print("❌ 채널을 찾을 수 없습니다.")
-
-bot.run('')
+        
+load_dotenv()
+bot.run(os.getenv("DISCORD_BOT_TOKEN"))
