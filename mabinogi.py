@@ -13,8 +13,8 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 scheduler = AsyncIOScheduler()
 
 # 설정값
-CHANNEL_ID = 1368110243183198219  # 여기에 알림을 보낼 채널 ID 입력
-ROLE_ID = 1368110735552548926     # 여기에 멘션할 역할 ID 입력
+CHANNEL_ID = 1370352924638711848  # 여기에 알림을 보낼 채널 ID 입력
+ROLE_ID = 1370353759208865862     # 여기에 멘션할 역할 ID 입력
 TIMEZONE = 'Asia/Seoul'          # 한국 시간대
 
 # 알람을 보낼 시간대 (3시간 간격, 10분 전)
